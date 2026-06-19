@@ -1,0 +1,39 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+site_url: "https://bucolic-duckanoo-9b8918.netlify.app"
+
+collections:
+  - name: "bags"
+    label: "Bags"
+    folder: "_data/bags"
+    create: true
+    slug: "bag-{{slug}}"
+    fields:
+      - {label: "Product ID", name: "id", widget: "string", default: "bag-"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Price (in Naira)", name: "price", widget: "number", value_type: "int"}
+      - {label: "Description", name: "desc", widget: "text"}
+      - {label: "Category", name: "category", widget: "select", options: ["Tote Bags", "Crossbody", "Work Bags", "Clutches"]}
+      - {label: "Badge", name: "badge", widget: "select", options: ["Bestseller", "New", "Limited", ""], required: false}
+      - {label: "Image", name: "imgPath", widget: "image", required: false}
+      - {label: "Configurable", name: "configurable", widget: "boolean", default: false}
+
+  - name: "art"
+    label: "Wall Art"
+    folder: "_data/art"
+    create: true
+    slug: "art-{{slug}}"
+    fields:
+      - {label: "Product ID", name: "id", widget: "string", default: "art-"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Base Price (in Naira)", name: "price", widget: "number", value_type: "int"}
+      - {label: "Description", name: "desc", widget: "text"}
+      - {label: "Category", name: "category", widget: "select", options: ["Minimalist Line Art", "Afrocentric Patterns", "Botanical", "Abstract"]}
+      - {label: "Badge", name: "badge", widget: "select", options: ["Bestseller", "New", "Limited", ""], required: false}
+      - {label: "Image", name: "imgPath", widget: "image", required: false}
+      - {label: "Configurable", name: "configurable", widget: "boolean", default: true}
