@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: folaliz21-boop/Folarin-Labake-
   branch: main
 
 media_folder: "images/uploads"
