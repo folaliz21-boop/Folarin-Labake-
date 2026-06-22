@@ -2,6 +2,8 @@ backend:
   name: github
   repo: folaliz21-boop/Folarin-Labake-
   branch: main
+  base_url: https://bucolic-duckanoo-9b8918.netlify.app
+  auth_endpoint: /auth/github
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
