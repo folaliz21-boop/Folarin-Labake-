@@ -6,8 +6,6 @@ backend:
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
-site_url: "https://bucolic-duckanoo-9b8918.netlify.app"
-
 collections:
   - name: "bags"
     label: "Bags"
